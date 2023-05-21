@@ -19,7 +19,7 @@ pipeline {
     }
     stage('Push') {
       steps {
-        sh 'docker push kimbee14/jenkins.lab::nginx-devops-v$BUILD_NUMBER'
+        sh 'docker push kimbee14/jenkins.lab:nginx-devops-v$BUILD_NUMBER'
       }
     }
   }
